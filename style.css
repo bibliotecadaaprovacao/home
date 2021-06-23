@@ -57,3 +57,10 @@ footer
 	background: #1e1e1e;
 	color: lightgrey;	
 }
+
+
+.buttonAmazon a 
+{ color: white; }
+
+.buttonAmazon a:hover
+{ color: white; }
