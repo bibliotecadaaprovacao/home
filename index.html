@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Meta Tag Obrigatórias -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width = device-width, initial-scale=1.0">
+
+	<!-- Metatags para o SEO -->
+	<meta name="description" content="O melhor local para você encontrar o seu material para te ajudar na sua aprovação, seja no vestibular, seja no concurso. Loja virtual que trabalha com produtos afiliados e que te ajuda a achar o melhor material pelo menor preço.">
+	<meta name="keywords" content="vestibular, aprovação, concurso, produtos, afiliados, digital, video aulas">
+	<meta name="author" content="Biblioteca da Aprovação">
+
+	<!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+	<!-- Link para importação de Biblioteca com ícones de redes sociais -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+
+
+
+    <!-- <title>Nome do Site - Descrição curta do site</title> -->
+   	<title>Biblioteca da Aprovação - O melhor lugar para se preparar para os estudos</title>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+
+	<header style="text-align: center; font-size: 3vw;">
+		<h1> <!-- Importante colocar esse "h1" pro SEO -->
+			<b>Biblioteca da Aprovação</b>
+			<!-- <b>BIBLIOTECA DA APROVAÇÃO</b> -->
+		</h1>
+	</header>
+
+	<div class="container">
+		<h2>Biblioteca da Aprovação</h2>
+		<p>Clique em um dos botões para aparecer os livros correspondentes</p>
+
+		<div class="row">
+			<div class="col-3" style="background: red;">g</div>
+			<div class="col-6" style="background: gold;">
+				<button id="botaoLivro" class="btn btn-outline-dark" onclick="goFUVEST(this)">
+					Livros FUVEST 2022
+				</button>
+				<button id="botaoLivro" class="btn btn-outline-dark" onclick="goUNICAMP(this)">
+					Livros UNICAMP 2022
+				</button>
+			</div>
+			<div class="col-3" style="background: blue;">g</div>
+		</div>
+
+		<div class="row" style="background: pink;">
+			<button id="botaoLivro" class="btn btn-outline-dark" onclick="goFUVEST(this)" style="display: block; margin-right: auto; margin-left: auto;">
+				Livros FUVEST 2022
+				</button>
+			<button id="botaoLivro" class="btn btn-outline-dark" onclick="goUNICAMP(this)" style="display: block; margin-right: auto; margin-left: auto;">
+				Livros UNICAMP 2022
+			</button>
+		</div>
+		<br><br>
+
+		<div class="row" style="background: ;">
+			<div class="col-6" style="background: ; ">
+				<button id="botaoLivro" class="btn btn-outline-dark" onclick="goFUVEST(this)" style="width: 75%;display: block; margin-right: auto; margin-left: auto;">
+					Livros FUVEST 2022
+				</button>
+			</div>
+			<div class="col-6" style="background: ; ">
+				<button id="botaoLivro" class="btn btn-outline-dark" onclick="goUNICAMP(this)" style="width: 75%;display: block; margin-right: auto; margin-left: auto;">
+					Livros UNICAMP 2022
+				</button>
+			</div>
+		</div>
+		<br><br>
+		
+
+		<div id="livroFUVEST" style="background: ; display: block;">
+			<br><br>
+			<div class="row" style="background: pink; display: " >
+				<div class="col-md-4" style="background: ;">
+					<img src="img/livro_Mindset.jpg" style="width: 75%; display: block; margin-right: auto; margin-left:auto;">
+					<div style="background: gold; text-align: center; display: block; margin-right: auto; margin-left:auto;">
+						<span><h3><b>Nome do Livro</b></h3></span>
+						<span><h5>Nome do autor</h5></span>
+						<span><b>Livro Físico:</b></span>
+						<span style="text-decoration: line-through;">De: R$ 57.90</span>
+						<span style="color: #b12704;"><b>Por: R$ 36.90</b></span>
+						<br><span><b>Kindle:</b></span>
+						<span style="color: #b12704;"><b>Por: R$ 40.91</b></span>
+					</div>
+					<a target="_blank" href="#" >
+						<button class="btn btn-dark buttonAmazon">
+						<i class="fab fa-amazon" class="logoAmazon"></i>
+						Ver livro na Amazon
+						</button>
+					</a> 
+				</div>
+				<div class="col-md-4" style="background: ;">
+					<img src="img/livro_Mindset.jpg" style="width: 75%; display: block; margin-right: auto; margin-left:auto;">
+					<div style="background: gold; text-align: center; display: block; margin-right: auto; margin-left:auto;">
+						<span><h3><b>Nome do Livro</b></h3></span>
+						<span><h5>Nome do autor</h5></span>
+						<span><b>Livro Físico:</b></span>
+						<span style="text-decoration: line-through;">De: R$ 57.90</span>
+						<span style="color: #b12704;"><b>Por: R$ 36.90</b></span>
+						<br><span><b>Kindle:</b></span>
+						<span style="color: #b12704;"><b>Por: R$ 40.91</b></span>
+					</div>
+					<a target="_blank" href="#" >
+						<button class="btn btn-dark buttonAmazon">
+						<i class="fab fa-amazon" class="logoAmazon"></i>
+						Ver livro na Amazon
+						</button>
+					</a> 
+				</div>
+				<div class="col-md-4" style="background: ;">
+					<img src="img/livro_Mindset.jpg" style="width: 75%; display: block; margin-right: auto; margin-left:auto;">
+					<div style="background: gold; text-align: center; display: block; margin-right: auto; margin-left:auto;">
+						<span><h5><b>Nome do Livro</b></h5></span>
+						<span><h6>Nome do autor</h6></span>
+						<span style="text-decoration: line-through;">De: R$ 57.90</span>
+						<span style="color: #b12704;"><b>Por: R$ 36.90</b></span>
+					</div>
+					<a href="#" >
+						<button class="btn btn-dark buttonAmazon">
+						<i class="fab fa-amazon" class="logoAmazon"></i>
+						Ver livro na Amazon
+						</button>
+					</a> 
+				</div>
+				<p><b>LIVROS DA FUVEST</b></p>	
+			</div>
+
+			<br><br>
+			<div class="row" style="background: ; display: " >
+				<div class="col-md-4" style="background: ;">
+					<img src="https://images-na.ssl-images-amazon.com/images/I/41ZiCXcTgZL._SX346_BO1,204,203,200_.jpg" style="width: 75%; display: block; margin-right: auto; margin-left:auto;">
+					<div style="background: gold; text-align: center; display: block; margin-right: auto; margin-left:auto;">
+						<span><h5><b>Poemas Escolhidos</b></h5></span>
+						<span><h6>Gregório de Matos</h6></span>
+						<span style="text-decoration: line-through;">De: R$ 47.90</span>
+						<span style="color: #b12704;"><b>Por: R$ 31.99</b></span>
+					</div>
+					<a href="https://www.amazon.com.br/Poemas-escolhidos-Greg%C3%B3rio-Matos/dp/8535918582/ref=sr_1_1?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=Poemas+Escolhidos+Greg%C3%B3rio+de+Matos&qid=1624310606&sr=8-1" >
+						<button class="btn btn-dark buttonAmazon">
+						<i class="fab fa-amazon" class="logoAmazon"></i>
+						Ver livro na Amazon
+						</button>
+					</a> 
+				</div>
+				<div class="col-md-4" style="background: ;">
+					<img src="https://images-na.ssl-images-amazon.com/images/I/51rWxK9dMCL._SX346_BO1,204,203,200_.jpg" style="width: 75%; display: block; margin-right: auto; margin-left:auto;">
+					<div style="background: gold; text-align: center; display: block; margin-right: auto; margin-left:auto;">
+						<span><h5><b>Quincas Borba </b></h5></span>
+						<span><h6>Machado de Assis</h6></span>
+						<span style="text-decoration: line-through;">De: R$ 24.90</span>
+						<span style="color: #b12704;"><b>Por: R$ 13.30</b></span>
+					</div>
+					<a target="_blank" href="https://www.amazon.com.br/Quincas-Borba-papai-Machado-Assis/dp/8594318855/ref=sr_1_3?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=Quincas+Borba+Machado+de+Assis&qid=1624384408&sr=8-3" >
+						<button class="btn btn-dark buttonAmazon">
+						<i class="fab fa-amazon" class="logoAmazon"></i>
+						Ver livro na Amazon
+						</button>
+					</a> 
+				</div>
+				<div class="col-md-4" style="background: ;">
+					<img src="https://images-na.ssl-images-amazon.com/images/I/41DlkipWHvL._SX324_BO1,204,203,200_.jpg" style="width: 75%; display: block; margin-right: auto; margin-left:auto;">
+					<div style="background: gold; text-align: center; display: block; margin-right: auto; margin-left:auto;">
+						<span><h5><b>Alguma Poesia</b></h5></span>
+						<span><h6>Carlos Drummond de Andrade</h6></span>
+						<span><b>Livro Físico:</b></span>
+						<span style="text-decoration: line-through;">De: R$ 49.90</span>
+						<span style="color: #b12704;"><b>Por: R$ 33.99</b></span>
+						<br><span><b>Kindle:</b></span>
+						<span style="color: #b12704;"><b>Por: R$ 21.41</b></span>
+					</div>
+					<a target="_blank" href="https://www.amazon.com.br/Alguma-poesia-Carlos-Drummond-Andrade/dp/8535922830/ref=sr_1_1?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=Alguma+Poesia+Carlos+Drummond+de+Andrade+fuvest&qid=1624384561&sr=8-1" >
+						<button class="btn btn-dark buttonAmazon">
+						<i class="fab fa-amazon" class="logoAmazon"></i>
+						Ver livro na Amazon
+						</button>
+					</a> 
+				</div>
+				<p><b>LIVROS DA FUVEST</b></p>
+			</div>
+
+			<br><br>
+			<div class="row" style="background: ; display: " >
+				<div class="col-md-4" style="background: ;">
+					<img src="https://images-na.ssl-images-amazon.com/images/I/51mvzkOmW+L._SX322_BO1,204,203,200_.jpg" style="width: 75%; display: block; margin-right: auto; margin-left:auto;">
+					<div style="background: gold; text-align: center; display: block; margin-right: auto; margin-left:auto;">
+						<span><h5><b>Angústia</b></h5></span>
+						<span><h6>Graciliano Ramos</h6></span>
+						<span><b>Livro Físico:</b></span>
+						<span style="text-decoration: line-through;">De: R$ 57.90</span>
+						<span style="color: #b12704;"><b>Por: R$ 36.90</b></span>
+						<br><span><b>Kindle:</b></span>
+						<span style="color: #b12704;"><b>Por: R$ 40.91</b></span>
+						
+						
+					</div>
+					<a target="_blank" href="https://www.amazon.com.br/Ang%C3%BAstia-Graciliano-Ramos/dp/8501115940/ref=sr_1_3?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=Ang%C3%BAstia+Graciliano+Ramos&qid=1624384691&sr=8-3" >
+						<button class="btn btn-dark buttonAmazon">
+						<i class="fab fa-amazon" class="logoAmazon"></i>
+						Ver livro na Amazon
+						</button>
+					</a> 
+				</div>
+				<div class="col-md-4" style="background: ;">
+					<img src="img/livro_Mindset.jpg" style="width: 75%; display: block; margin-right: auto; margin-left:auto;">
+					<div style="background: gold; text-align: center; display: block; margin-right: auto; margin-left:auto;">
+						<span><h5><b>Nome do Livro</b></h5></span>
+						<span><h6>Nome do autor</h6></span>
+						<span style="text-decoration: line-through;">De: R$ 57.90</span>
+						<span style="color: #b12704;"><b>Por: R$ 36.90</b></span>
+					</div>
+					<a href="#" >
+						<button class="btn btn-dark buttonAmazon">
+						<i class="fab fa-amazon" class="logoAmazon"></i>
+						Ver livro na Amazon
+						</button>
+					</a> 
+				</div>
+				<div class="col-md-4" style="background: ;">
+					<img src="img/livro_Mindset.jpg" style="width: 75%; display: block; margin-right: auto; margin-left:auto;">
+					<div style="background: gold; text-align: center; display: block; margin-right: auto; margin-left:auto;">
+						<span><h5><b>Nome do Livro</b></h5></span>
+						<span><h6>Nome do autor</h6></span>
+						<span style="text-decoration: line-through;">De: R$ 57.90</span>
+						<span style="color: #b12704;"><b>Por: R$ 36.90</b></span>
+					</div>
+					<a href="#" >
+						<button class="btn btn-dark buttonAmazon">
+						<i class="fab fa-amazon" class="logoAmazon"></i>
+						Ver livro na Amazon
+						</button>
+					</a> 
+				</div>
+				<p><b>LIVROS DA FUVEST</b></p>
+			</div>
+			
+			<br><br>
+			<div class="row" style="background: ; display: " >
+				<a href="Livros pra FUVEST 2022" target="_blank"><button>Livros pra FUVEST 2022</button></a>
+			</div>
+		</div>
+
+		<div id="livroUNICAMP"  style="background: green; display: none;">
+			<br><br>
+			<div class="row" style="background: ; display: " >
+				<div class="col-md-4" style="background: ;">
+					<img src="img/livro_PoderDoHabito.jpg" style="width: 75%; display: block; margin-right: auto; margin-left:auto;">
+					<div style="background: gold; text-align: center; display: block; margin-right: auto; margin-left:auto;">
+						<span><h5><b>Nome do Livro</b></h5></span>
+						<span><h6>Nome do autor</h6></span>
+						<span style="text-decoration: line-through;">De: R$ 57.90</span>
+						<span style="color: #b12704;"><b>Por: R$ 36.90</b></span>
+					</div>
+					<a href="#" >
+						<button class="btn btn-dark buttonAmazon">
+						<i class="fab fa-amazon" class="logoAmazon"></i>
+						Ver livro na Amazon
+						</button>
+					</a> 
+				</div>
+				<div class="col-md-4" style="background: ;">
+					<img src="img/livro_PoderDoHabito.jpg" style="width: 75%; display: block; margin-right: auto; margin-left:auto;">
+					<div style="background: gold; text-align: center; display: block; margin-right: auto; margin-left:auto;">
+						<span><h5><b>Nome do Livro</b></h5></span>
+						<span><h6>Nome do autor</h6></span>
+						<span style="text-decoration: line-through;">De: R$ 57.90</span>
+						<span style="color: #b12704;"><b>Por: R$ 36.90</b></span>
+					</div>
+					<a href="#" >
+						<button class="btn btn-dark buttonAmazon">
+						<i class="fab fa-amazon" class="logoAmazon"></i>
+						Ver livro na Amazon
+						</button>
+					</a> 
+				</div>
+				<div class="col-md-4" style="background: ;">
+					<img src="img/livro_PoderDoHabito.jpg" style="width: 75%; display: block; margin-right: auto; margin-left:auto;">
+					<div style="background: gold; text-align: center; display: block; margin-right: auto; margin-left:auto;">
+						<span><h5><b>Nome do Livro</b></h5></span>
+						<span><h6>Nome do autor</h6></span>
+						<span style="text-decoration: line-through;">De: R$ 57.90</span>
+						<span style="color: #b12704;"><b>Por: R$ 36.90</b></span>
+					</div>
+					<a href="#" >
+						<button class="btn btn-dark buttonAmazon">
+						<i class="fab fa-amazon" class="logoAmazon"></i>
+						Ver livro na Amazon
+						</button>
+					</a> 
+				</div>
+				<p><b>LIVROS DA UNICAMP</b></p>
+			</div>
+
+			<br><br>
+			<div class="row" style="background: ; display: " >
+				<div class="col-md-4" style="background: ;">
+					<img src="img/livro_PoderDoHabito.jpg" style="width: 75%; display: block; margin-right: auto; margin-left:auto;">
+					<div style="background: gold; text-align: center; display: block; margin-right: auto; margin-left:auto;">
+						<span><h5><b>Nome do Livro</b></h5></span>
+						<span><h6>Nome do autor</h6></span>
+						<span style="text-decoration: line-through;">De: R$ 57.90</span>
+						<span style="color: #b12704;"><b>Por: R$ 36.90</b></span>
+					</div>
+					<a href="#" >
+						<button class="btn btn-dark buttonAmazon">
+						<i class="fab fa-amazon" class="logoAmazon"></i>
+						Ver livro na Amazon
+						</button>
+					</a> 
+				</div>
+				<div class="col-md-4" style="background: ;">
+					<img src="img/livro_PoderDoHabito.jpg" style="width: 75%; display: block; margin-right: auto; margin-left:auto;">
+					<div style="background: gold; text-align: center; display: block; margin-right: auto; margin-left:auto;">
+						<span><h5><b>Nome do Livro</b></h5></span>
+						<span><h6>Nome do autor</h6></span>
+						<span style="text-decoration: line-through;">De: R$ 57.90</span>
+						<span style="color: #b12704;"><b>Por: R$ 36.90</b></span>
+					</div>
+					<a href="#" >
+						<button class="btn btn-dark buttonAmazon">
+						<i class="fab fa-amazon" class="logoAmazon"></i>
+						Ver livro na Amazon
+						</button>
+					</a> 
+				</div>
+				<div class="col-md-4" style="background: ;">
+					<img src="img/livro_PoderDoHabito.jpg" style="width: 75%; display: block; margin-right: auto; margin-left:auto;">
+					<div style="background: gold; text-align: center; display: block; margin-right: auto; margin-left:auto;">
+						<span><h5><b>Nome do Livro</b></h5></span>
+						<span><h6>Nome do autor</h6></span>
+						<span style="text-decoration: line-through;">De: R$ 57.90</span>
+						<span style="color: #b12704;"><b>Por: R$ 36.90</b></span>
+					</div>
+					<a href="#" >
+						<button class="btn btn-dark buttonAmazon">
+						<i class="fab fa-amazon" class="logoAmazon"></i>
+						Ver livro na Amazon
+						</button>
+					</a> 
+				</div>
+				<p><b>LIVROS DA UNICAMP</b></p>
+			</div>
+
+			<br><br>
+			<div class="row" style="background: ; display: " >
+				<a href="Livros pra UNICAMP 2022" target="_blank"><button>Livros pra UNICAMP 2022</button></a>
+			</div>
+		</div>
+		
+	</div>
+
+	<script type="text/javascript">
+		
+		function goFUVEST(elemento)
+		{	
+			var bookFUVEST = document.getElementById('livroFUVEST');
+			var bookUNICAMP = document.getElementById('livroUNICAMP');
+
+			if (bookFUVEST.style.display === 'none' ) 
+			{
+				//bookFUVEST.style.display = 'flex';
+				bookFUVEST.style.display = 'block';
+				bookUNICAMP.style.display = 'none';
+
+			}
+			/*else
+			{
+				bookFUVEST.style.display = 'block';
+				bookUNICAMP.style.display = 'none';
+				//break;
+			}*/
+		}
+
+		function goUNICAMP(elemento)
+		{	
+			var bookFUVEST = document.getElementById('livroFUVEST');
+			var bookUNICAMP = document.getElementById('livroUNICAMP');
+
+			if (bookUNICAMP.style.display === 'none' ) 
+			{
+				//bookUNICAMP.style.display = 'flex';
+				bookUNICAMP.style.display = 'block';
+				bookFUVEST.style.display = 'none';
+			}
+			/*else
+			{
+				bookUNICAMP.style.display = 'block';
+				bookFUVEST.style.display = 'none';
+				//break;
+			}*/
+		}
+	</script>
+</body>
+</html>
